@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import classes from "./UserLogin.module.css";
+
 const UserRegister = () => {
   const [handle, setHandle] = useState("");
   const [email, setEmail] = useState("");
@@ -15,9 +17,9 @@ const UserRegister = () => {
     };
   };
   return (
-    <div>
-      <h2> User Register</h2>
-      <form>
+    <div className={classes.container}>
+      <h2 className={classes.title}> User Register</h2>
+      <form className={classes.form}>
         <label>
           Handle:
           <input
@@ -50,7 +52,7 @@ const UserRegister = () => {
             value={password2}
           />
         </label>
-        <div onClick={handleRegister}>
+        <div className={classes.button} onClick={handleRegister}>
           <p>Register</p>
         </div>
       </form>

@@ -1,0 +1,13 @@
+.switch {
+  border-bottom: 1px solid black;
+  display: flex;
+  padding: 5px;
+}
+
+.active,
+.inactive {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
